@@ -46,6 +46,7 @@ model Card {
 enum MechanicCategory {
   Matchmaking
   Gameplay
+  CardPool
 }
 
 model Mechanic {
@@ -73,4 +74,25 @@ model Task {
   order       Int      @default(0)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+}
+
+model MiniBoss {
+  id          String   @id @default(cuid())
+  bossName    String
+  hp          Int      @default(0)
+  atk         Int      @default(0)
+  effect      String?
+  bossReward  String?
+  imageUrl    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model SpecialEquipment {
+  id        String   @id @default(cuid())
+  name      String
+  effect    String?
+  imageUrl  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }

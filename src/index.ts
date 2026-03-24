@@ -7,6 +7,8 @@ import { cardRouter } from './routes/card.router'
 import { mechanicRouter } from './routes/mechanic.router'
 import { regionRouter } from './routes/region.router'
 import taskRouter from './routes/task.router'
+import { miniBossRouter } from './routes/miniboss.router'
+import { specialEquipmentRouter } from './routes/specialequipment.router'
 import uploadRouter from './routes/upload.router'
 import { AppError } from './utils/AppError'
 import path from 'path'
@@ -78,6 +80,8 @@ app.use('/api/cards', cardRouter)
 app.use('/api/mechanics', mechanicRouter)
 app.use('/api/regions', regionRouter)
 app.use('/api/tasks', taskRouter)
+app.use('/api/minibosses', miniBossRouter)
+app.use('/api/special-equipment', specialEquipmentRouter)
 app.use('/api/upload', uploadRouter)
 
 // Undefined Routes
