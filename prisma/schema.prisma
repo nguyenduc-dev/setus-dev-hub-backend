@@ -23,6 +23,7 @@ model Character {
   activeSkill  String?
   specialSkill String?
   imageUrl     String?
+  winCondition String?
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 }
