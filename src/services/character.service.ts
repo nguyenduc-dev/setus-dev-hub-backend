@@ -19,6 +19,7 @@ export class CharacterService {
     name: string;
     type: Faction;
     hp?: number;
+    level?: string;
     passiveSkill?: string;
     activeSkill?: string;
     specialSkill?: string;
@@ -35,6 +36,7 @@ export class CharacterService {
       name: string;
       type: Faction;
       hp: number;
+      level: string;
       passiveSkill: string;
       activeSkill: string;
       specialSkill: string;
