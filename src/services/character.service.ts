@@ -25,6 +25,8 @@ export class CharacterService {
     specialSkill?: string;
     imageUrl?: string;
     winCondition?: string;
+    storyChar?: string;
+    charDesc?: string;
   }) {
     return await prisma.character.create({
       data,
@@ -43,6 +45,8 @@ export class CharacterService {
       specialSkill: string;
       imageUrl: string;
       winCondition: string;
+      storyChar: string;
+      charDesc: string;
     }>
   ) {
     // If the image is being updated, delete the old one from Cloudinary
